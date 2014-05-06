@@ -3,7 +3,7 @@ module ActsAsTaggableOn
   class Tag < ::ActiveRecord::Base
     extend ActsAsTaggableOn::Utils
 
-    attr_accessible :name if defined?(ActiveModel::MassAssignmentSecurity)
+    attr_accessible :name #if defined?(ActiveModel::MassAssignmentSecurity)
 
     ### ASSOCIATIONS:
 
